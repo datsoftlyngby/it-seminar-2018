@@ -1,1 +1,1 @@
-# it-seminar-2018
+# IT Seminar 2018 - Helsinki
