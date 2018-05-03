@@ -8,7 +8,7 @@
  
 **Wednesday** company visits, starting with Fujitsu Finland in the morning, Symetri in the early afternoon, and possibly Arilyn in the late afternoon Symetri is a 3D scanning company and Arilyn is a VR marketing firm. if I can’t get Symetri or Arilyn, we could also start with a half day at the school first and then noon at Fujitsu.
  
-Thursday Spain, and faculty dinner
+**Thursday** Spain, and faculty dinner
  
 **Friday** Switzerland
  
