@@ -18,3 +18,11 @@ Denmark and Finland will attempt a joint project with Danes doing a day on Ardui
 
 ## IT meeting
 Wednesday 16th 09:00 - 12:00
+
+## Wishlist
+
+* DC motors with gears
+* White LEDs
+* Smaller breadboards
+* Photo resistors
+
