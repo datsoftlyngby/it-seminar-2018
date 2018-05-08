@@ -25,4 +25,6 @@ Wednesday 16th 09:00 - 12:00
 * White LEDs
 * Smaller breadboards
 * Photo resistors
+* Cardboard
+* Coloured tape (black)
 
