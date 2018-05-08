@@ -15,3 +15,6 @@
 We have a classroom opposite to the 3D Lab so it’s pretty good.
  
 Denmark and Finland will attempt a joint project with Danes doing a day on Arduino robots and Finns providing printing services for them. We’ve been thinking of a race or competition of sorts, but it’s still being discussed.
+
+## IT meeting
+Wednesday 16th 09:00 - 12:00
