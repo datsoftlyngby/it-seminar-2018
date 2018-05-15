@@ -2,19 +2,52 @@
 
 ## Schedule
 
-**Monday** Denmark, and ice breaking event
+**Monday** 21-05. Finnish/Danish day
  
-**Tuesday** Finland
+09.00 Introduction and practicalities
+Presentation of Arduinos, Denmark
+workshop on Arduinos
+12:00 or so lunch
+13:00 coffee
+Arduino workshop continues
+16:30 day ends
+18:00-19:00 bowling at Ruusulankatu
+19:30 dinner at Virgin Oil Co. center of Helsinki
  
-**Wednesday** company visits, starting with Fujitsu Finland in the morning, Symetri in the early afternoon, and possibly Arilyn in the late afternoon Symetri is a 3D scanning company and Arilyn is a VR marketing firm. if I can’t get Symetri or Arilyn, we could also start with a half day at the school first and then noon at Fujitsu.
+**Tuesday** Finnish/Danish day
  
-**Thursday** Spain, and faculty dinner
+09:00 Presentation on practical 3D Printing
+Arduino workshop continues with printing of cases for Arduinos
+12:00 or so lunch
+13:00 coffee
+printing workshop continues
+17:00 day ends
  
-**Friday** Switzerland
+**Wednesday** Company visits
  
-We have a classroom opposite to the 3D Lab so it’s pretty good.
+09.00 Fujitsu Pitäjänmäki << VERY IMPORTANT TIME
+12:00 lunch at Haaga-Helia
+13:00 Symetri comes to visit
+14:30 coffee
+15:00 Arilyn comes to visit
+17:00 day ends
+Random partying around town
  
-Denmark and Finland will attempt a joint project with Danes doing a day on Arduino robots and Finns providing printing services for them. We’ve been thinking of a race or competition of sorts, but it’s still being discussed.
+**Thursday** Spanish Day
+ 
+09:00 presentation and workshop
+12:00 lunch
+13:00 coffee
+workshop goes on
+17:00 day ends
+Faculty dinner at Fat Lizard Otaniemi, students party around Helsinki
+ 
+**Friday** Swiss day
+08.30 presentation and workshop << note time,
+11:30 lunch
+12:00 coffee
+workshop goes on
+15:00 day ends, diplomas and goodbyes
 
 ## IT meeting
 Wednesday 16th 09:00 - 12:00
