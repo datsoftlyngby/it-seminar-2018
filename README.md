@@ -60,4 +60,4 @@ Wednesday 16th 09:00 - 12:00
 * Photo resistors
 * Cardboard
 * Coloured tape (black)
-
+* Batteries and battery cases
