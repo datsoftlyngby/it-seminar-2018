@@ -3,6 +3,7 @@
 ## Stuff
 
 http://42bots.com/tutorials/28byj-48-stepper-motor-with-uln2003-driver-and-arduino-uno/
+http://www.airspayce.com/mikem/arduino/AccelStepper/index.html
 
 ## Schedule
 
