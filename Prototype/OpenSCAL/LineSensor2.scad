@@ -10,6 +10,8 @@ led = [0, 1.25, -0.1];
 
 ch = 1.6;
 
+function size(v) = sqrt(v.x*v.x
+
 //difference() {
 %    translate([-0.8, 0, 0]) cube([1.6, 1.6, ch]);
     
@@ -20,6 +22,8 @@ ch = 1.6;
         cylinder(h = ch - 0.8, r = 0.25);
         cylinder(h = 0.25, r = 0.32);
         }
+     
+    
          
  //   }
 
