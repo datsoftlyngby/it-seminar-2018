@@ -1,4 +1,4 @@
-//MotorCut_28BYJ_48();
+MotorCut_28BYJ_48();
 //AxisCut_28BYJ_48();
 
 module MotorCut_28BYJ_48()

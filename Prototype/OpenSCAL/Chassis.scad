@@ -1,6 +1,6 @@
 use <StepperMotor28BYJ_48.scad>;
 
-Chassis(thickness = 3);
+Chassis();
 
 module Chassis(length = 120, width = 100, thickness = 5, wheelRadius = 40)
 {
