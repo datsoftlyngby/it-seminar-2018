@@ -6,6 +6,12 @@ http://42bots.com/tutorials/28byj-48-stepper-motor-with-uln2003-driver-and-ardui
 http://www.airspayce.com/mikem/arduino/AccelStepper/index.html
 [SG90 Servo](http://akizukidenshi.com/download/ds/towerpro/SG90.pdf)
 
+## People
+| Name             | Phone        | Out    |    Departure     | Stay                                                                            | Home   |     Departure    |
+| :--------------- | :----------- | :----- | :--------------: | :------------------------------------------------------------------------------ | :----- | :--------------: |
+| Anders Kalhauge  | +45 21724411 | SK1720 | 2018-05-20 22:15 | [Sokos Hotel Pasila](https://www.sokoshotels.fi/en/helsinki/sokos-hotel-pasila) | SK1717 | 2018-05-25 20:55 |
+| Tobias Grundtvig |              | SK1720 | 2018-05-20 22:15 | [Sokos Hotel Pasila](https://www.sokoshotels.fi/en/helsinki/sokos-hotel-pasila) | SK1717 | 2018-05-25 20:55 |
+
 ## Schedule
 
 **Monday** 21-05. Finnish/Danish day
