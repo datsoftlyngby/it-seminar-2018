@@ -19,4 +19,4 @@ module wheel(spokeCount = 12) {
         }
     }
 
-wheel(7);
+wheel(3);
