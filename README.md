@@ -11,6 +11,17 @@ http://www.airspayce.com/mikem/arduino/AccelStepper/index.html
 | :--------------- | :----------- | :----- | :--------------: | :------------------------------------------------------------------------------ | :----- | :--------------: |
 | Anders Kalhauge  | +45 21724411 | SK1720 | 2018-05-20 22:15 | [Sokos Hotel Pasila](https://www.sokoshotels.fi/en/helsinki/sokos-hotel-pasila) | SK1717 | 2018-05-25 20:55 |
 | Tobias Grundtvig |              | SK1720 | 2018-05-20 22:15 | [Sokos Hotel Pasila](https://www.sokoshotels.fi/en/helsinki/sokos-hotel-pasila) | SK1717 | 2018-05-25 20:55 |
+| Adam Bečvář      |||||||
+| Martin Lohdal    |||||||
+
+## Helsinki
+
+[Tickets in Helsinki](https://www.hsl.fi/en/tickets-and-fares/travel-card)
+
+Or better, download the app:
+
+[HSL Mobiililppu](https://www.hsl.fi/en/mobileticket)
+
 
 ## Schedule
 
