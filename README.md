@@ -11,7 +11,7 @@ http://www.airspayce.com/mikem/arduino/AccelStepper/index.html
 | :--------------------- | :----------- | :----- | :--------------: | :------------------------------------------------------------------------------ | :----- | :--------------: |
 | Anders Kalhauge        | +45 21724411 | SK1720 | 2018-05-20 22:15 | [Sokos Hotel Pasila](https://www.sokoshotels.fi/en/helsinki/sokos-hotel-pasila) | SK1717 | 2018-05-25 20:55 |
 | Tobias Grundtvig       |              | SK1720 | 2018-05-20 22:15 | [Sokos Hotel Pasila](https://www.sokoshotels.fi/en/helsinki/sokos-hotel-pasila) | SK1717 | 2018-05-25 20:55 |
-| Adam Bečvář            |||||||
+| Adam Bečvář            | +45 91870517 | D8261 | 20-05 10:30 | airbnb || 25-05 19:30 |
 | Martin Lodahl Andersen | +45 26426569 | D8261 | 20-05 10:30 | [cheapsleep](https://www.cheapsleep.fi/) | D8262 | 25-05 19:20 |
 
 ## Helsinki
