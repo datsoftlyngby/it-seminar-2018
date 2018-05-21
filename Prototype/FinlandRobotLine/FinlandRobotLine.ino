@@ -59,10 +59,10 @@ int motorAState = 0; // 0 = STOPPED, 1 = FORWARDS, -1 = BACKWARDS
 int motorBState = 0; // 0 = STOPPED, 1 = FORWARDS, -1 = BACKWARDS
 
 void setup() {
-  motorA.setMaxSpeed(300.0);
+  motorA.setMaxSpeed(500.0);
   motorA.setAcceleration(300.0);
   
-  motorB.setMaxSpeed(300.0);
+  motorB.setMaxSpeed(500.0);
   motorB.setAcceleration(300.0);
  
   // setup servo
@@ -85,15 +85,10 @@ void loop()
     motorBForward();
     motorAStop();
   }
-  if(value == 1)
-  {
-    motorAForward();
-    motorBStop();
-  }
   else
   {
     motorAForward();
-    motorBForward();
+    motorBStop();
   }
   
   for(int i = 0; i < 20; ++i)
