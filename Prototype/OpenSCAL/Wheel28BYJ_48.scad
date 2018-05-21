@@ -8,7 +8,7 @@ module wheel28BYJ_48(spokeCount = 12)
         wheel(spokeCount);
         translate([0,0,12])
             rotate([180,0,0])
-                AxisCut_28BYJ_48();
+                resize([6.2,6.2,0]) AxisCut_28BYJ_48();
     }   
 }
 
