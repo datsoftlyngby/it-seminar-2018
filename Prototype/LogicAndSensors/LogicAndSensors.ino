@@ -7,11 +7,11 @@
  *    4 - Turn right
  */
 //
-#define TRIGGER_PIN  2  // Arduino pin tied to trigger pin on the ultrasonic sensor.
-#define ECHO_PIN     3  // Arduino pin tied to echo pin on the ultrasonic sensor.
-#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters).
+//#define TRIGGER_PIN  2  // Arduino pin tied to trigger pin on the ultrasonic sensor.
+//#define ECHO_PIN     3  // Arduino pin tied to echo pin on the ultrasonic sensor.
+//#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters).
 
-#include <NewPing.h>
+//#include <NewPing.h>
 #include <ByteTransfer.h>
 
 
@@ -22,9 +22,11 @@ const int outPin = 6;
 
 uint8_t outData;
 boolean waitingToWrite;
+boolean paramWaiting;
+uint8_t parameter;
 
 //Ultra sensor
-NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
+//NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 
 void sendByte(uint8_t data)
 {
@@ -34,6 +36,10 @@ void sendByte(uint8_t data)
 
 void OnDataIn(uint8_t data)
 {
+  if(data == 2)
+  {
+    onFinishMove();
+  }
 }
 
 bool OnDataOut(uint8_t &data)
@@ -42,6 +48,12 @@ bool OnDataOut(uint8_t &data)
   {
     data = outData;
     waitingToWrite = false;
+    return true;
+  }
+  else if(paramWaiting)
+  {
+    data = parameter;
+    paramWaiting = false;
     return true;
   }
   return false;
@@ -56,24 +68,72 @@ void setup()
   delay(10000);
   bt.Initialize();
   waitingToWrite = false;
+  paramWaiting = false;
 }
+
+int curState = 0;
+int newState = 1;
 
 void loop()
 {
-  if(!waitingToWrite)
+  if(!waitingToWrite && !paramWaiting)
   {
-    //Read distance
-    int dist = sonar.ping_cm();
-    if(dist < 20)
+    if(curState != newState)
     {
-      sendByte(3);
+      switch(newState)
+      {
+        case 1:
+          moveForward(30);                         
+          break;
+        case 2:
+          turnLeft(128); 
+          break;
+        case 3:
+          moveForward(30);
+          break;
+        case 4:
+          turnRight(128); 
+          break;
+      }
+      curState = newState;
     }
-    else
-    {
-      sendByte(1);
-    }
+    
   }
   bt.Update();
+}
+
+void moveForward(uint8_t cm)
+{
+  sendByte(10);
+  parameter = cm;
+  paramWaiting = true;
+}
+
+void moveBackward(uint8_t cm)
+{
+  sendByte(11);
+  parameter = cm;
+  paramWaiting = true;
+}
+
+void turnLeft(int value)
+{
+  sendByte(12);
+  parameter = value - 1;
+  paramWaiting = true;
+}
+
+void turnRight(int value)
+{
+  sendByte(13);
+  parameter = value - 1;
+  paramWaiting = true;
+}
+
+void onFinishMove()
+{
+  ++newState;
+  if(newState > 4) newState = 1;
 }
 
 
