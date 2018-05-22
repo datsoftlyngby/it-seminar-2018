@@ -102,10 +102,10 @@ void setup()
   waitingToWrite = false;
   delay(10000);
   bt.Initialize();
-  motorA.setMaxSpeed(500.0);
-  motorA.setAcceleration(200.0);
-  motorB.setMaxSpeed(500.0);
-  motorB.setAcceleration(200.0);
+  motorA.setMaxSpeed(300.0);
+  motorA.setAcceleration(100.0);
+  motorB.setMaxSpeed(300.0);
+  motorB.setAcceleration(100.0);
 }
 
 void loop()
@@ -129,34 +129,30 @@ void motorBStop()
 void motorAForward()
 {
   motorAState = 1;
-  motorA.moveTo(motorA.currentPosition());
   motorA.move(-stepsPrRevolution);
 }
 
 void motorBForward()
 {
   motorBState = 1;
-  motorB.moveTo(motorB.currentPosition());
   motorB.move(stepsPrRevolution);
 }
 
 void motorABackward()
 {
   motorAState = -1;
-  motorA.moveTo(motorA.currentPosition());
   motorA.move(stepsPrRevolution);
 }
 
 void motorBBackward()
 {
   motorBState = -1;
-  motorB.moveTo(motorB.currentPosition());
   motorB.move(-stepsPrRevolution);
 }
 
 void updateMotors()
 {
-  if(motorAState == 1 && motorA.distanceToGo() < stepsPrRevolution)
+  if(motorAState == 1 && motorA.distanceToGo() > -stepsPrRevolution)
   {
     motorA.move(-stepsPrRevolution);
   }
@@ -168,7 +164,7 @@ void updateMotors()
   {
     motorB.move(stepsPrRevolution);
   }
-  if(motorBState == -1 && motorB.distanceToGo() < stepsPrRevolution)
+  if(motorBState == -1 && motorB.distanceToGo() > -stepsPrRevolution)
   {
     motorB.move(-stepsPrRevolution);
   }
