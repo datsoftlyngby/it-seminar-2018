@@ -2,18 +2,26 @@
 //
 /*  Remote control of two stepper motors
  *  
- *    Direct control
+ *    Double motor control:
  *    0 - Stop both motors
  *    1 - Both motors forward
  *    2 - Both motors backward
  *    3 - Turn left
  *    4 - Turn right
  *    
+ *    Single motor control:
+ *    5 - Motor A stop
+ *    6 - Motor B stop
+ *    7 - Motor A Forward
+ *    8 - Motor B Forward
+ *    9 - Motor A Backward
+ *    10 - Motor B Backward
+ *    
  *    Measured distances (must be stopped first)
- *    10 - Forward (param dist in cm)
- *    11 - Backward (param dist in cm)
- *    12 - Turn left (param n, Turns (n+1)/256 of a full rotation)
- *    13 - Turn right (param n, Turns (n+1)/256 of a full rotation)
+ *    11 - Forward (param dist in cm)
+ *    12 - Backward (param dist in cm)
+ *    13 - Turn left (param n, Turns (n+1)/256 of a full rotation)
+ *    14 - Turn right (param n, Turns (n+1)/256 of a full rotation)
  *    
  */
 #include <AccelStepper.h>
@@ -55,23 +63,23 @@ bool sendByte(uint8_t data)
 
 void OnDataIn(uint8_t data)
 {
-  if(movingState >= 10)
+  if(movingState >= 11)
   {
     switch(movingState)
     {
-      case 10: 
+      case 11: 
         moveForward(data);
         movingState = 1;
         break;
-      case 11:
+      case 12:
         moveBackward(data);
         movingState = 1;
         break;
-      case 12:
+      case 13:
         turnLeft(data);
         movingState = 1;
         break;
-      case 13:
+      case 14:
         turnRight(data);
         movingState = 1;
         break;
@@ -110,10 +118,41 @@ void OnDataIn(uint8_t data)
       motorBForward();
       sendByte(0);
       break;
+      //Individual motor control
+    case 5:
+      movingState = 0;
+      motorAStop();
+      sendByte(0);
+      break;
+    case 6:
+      movingState = 0;
+      motorBStop();
+      sendByte(0);
+      break;
+    case 7:
+      movingState = 0;
+      motorAForward();
+      sendByte(0);
+      break;
+    case 8:
+      movingState = 0;
+      motorBForward();
+      sendByte(0);
+      break;
+    case 9:
+      movingState = 0;
+      motorABackward();
+      sendByte(0);
+      break;
     case 10:
+      movingState = 0;
+      motorBBackward();
+      sendByte(0);
+      break;
     case 11:
     case 12:
     case 13:
+    case 14:
       movingState = data;
       break;
     default:
@@ -133,8 +172,6 @@ bool OnDataOut(uint8_t &data)
   return false;
 }
 
-
-
 ByteTransfer bt(inPin, dataPin, outPin, OnDataIn, OnDataOut);
 
 int motorAState = 0;
@@ -146,9 +183,9 @@ void setup()
   delay(10000);
   bt.Initialize();
   motorA.setMaxSpeed(300.0);
-  motorA.setAcceleration(100.0);
+  motorA.setAcceleration(600.0);
   motorB.setMaxSpeed(300.0);
-  motorB.setAcceleration(100.0);
+  motorB.setAcceleration(600.0);
 }
 
 void loop()
